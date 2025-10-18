@@ -24,6 +24,7 @@ exclude:
   - Gemfile.lock
   - node_modules
   - vendor
+  - AGENTS.md
 
 # Minima navigation (align with MimiLoopDocs)
 # ヘッダーナビは明示指定しない（最小構成）
