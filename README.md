@@ -16,7 +16,8 @@
 - `_layouts/default.html` — 共通レイアウト
 - `_data/apps.yml` — アプリ一覧データ
 - `index.md` — トップページ（アプリ一覧を表示）
-- `apps/<app>/privacy/index.md` — 各アプリのプライバシーポリシー
+- `apps/<app>/privacy/index.md` — 各アプリのプライバシーポリシー（日本語）
+- `apps/<app>/privacy/en/index.md` — 英語版プライバシーポリシー（必要に応じて）
 
 ## 追加方法（新しいアプリのポリシー）
 
@@ -47,6 +48,11 @@
 4. 外部サービス・SDKの具体項目（任意）:
    - `_data/policies/<app>.yml` に `sdks` 配列として管理し、ポリシーページで自動表示されます。
    - フィールド例: `name`, `provider`, `purpose`, `data_sent[]`, `endpoint`, `retention`, `opt_out`, `docs`
+
+5. 多言語（英語版）の追加（任意）:
+   - 英語版は `apps/<app>/privacy/en/index.md` に配置し、`lang: en` を付与。
+   - 各言語ページに相互リンク（言語切替）を設置。
+   - 解釈に相違がある場合は「日本語版優先」で運用。
 
 ## 運用メモ
 
