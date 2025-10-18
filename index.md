@@ -1,8 +1,7 @@
-layout: page
-title: Home
 ---
-
-# アプリのドキュメントとポリシー
+layout: page
+title: アプリ一覧
+---
 
 以下のアプリのポリシーやドキュメントを公開しています。
 

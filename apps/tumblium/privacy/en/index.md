@@ -1,10 +1,9 @@
+---
 layout: page
 title: Tumblium Privacy Policy
 description: Privacy policy for the Tumblium app
 lang: en
 ---
-
-# Privacy Policy (Tumblium)
 
 Last Updated: 2025-10-18
 

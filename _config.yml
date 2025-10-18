@@ -26,6 +26,4 @@ exclude:
   - vendor
 
 # Minima navigation (align with MimiLoopDocs)
-header_pages:
-  - apps/tumblium/privacy/index.md
-  - apps/tumblium/privacy/en/index.md
+# ヘッダーナビは明示指定しない（最小構成）

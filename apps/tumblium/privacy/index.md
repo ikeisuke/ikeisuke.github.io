@@ -1,10 +1,9 @@
+---
 layout: page
 title: Tumblium プライバシーポリシー
 description: Tumblium アプリに関するプライバシーポリシー
 lang: ja
 ---
-
-# プライバシーポリシー（Tumblium）
 
 最終更新日: 2025-10-18
 
