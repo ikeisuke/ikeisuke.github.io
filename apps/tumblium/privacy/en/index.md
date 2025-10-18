@@ -80,20 +80,31 @@ If the App integrates services other than Tumblr, such integrations follow each 
 
 {% assign sdks = site.data.policies.tumblium.sdks %}
 {% if sdks and sdks.size > 0 %}
-<ul>
 {% for s in sdks %}
-  <li>
-    <strong>{{ s.name }}</strong>
-    {% if s.provider %}(Provider: {{ s.provider }}){% endif %}<br>
-    Purpose: {{ s.purpose | default: '—' }}<br>
-    Data sent: {% if s.data_sent %}{{ s.data_sent | join: ', ' }}{% else %}—{% endif %}<br>
-    Endpoint: {{ s.endpoint | default: '—' }}<br>
-    Retention: {{ s.retention | default: '—' }}<br>
-    Opt-out: {{ s.opt_out | default: '—' }}<br>
-    Docs: {% if s.docs %}<a href="{{ s.docs }}" rel="noopener" target="_blank">Provider policy/docs</a>{% else %}—{% endif %}
-  </li>
+<section>
+  <h4 style="margin-bottom: .2rem;">
+    {{ s.name }}{% if s.provider %} (Provider: {{ s.provider }}){% endif %}
+  </h4>
+  <ul>
+    <li>Purpose: {{ s.purpose | default: '—' }}</li>
+    <li>
+      Data sent:
+      {% if s.data_sent %}
+      <ul>
+      {% for item in s.data_sent %}
+        <li>{{ item }}</li>
+      {% endfor %}
+      </ul>
+      {% else %}—{% endif %}
+    </li>
+    <li>Endpoint: {{ s.endpoint | default: '—' }}</li>
+    <li>Retention: {{ s.retention | default: '—' }}</li>
+    <li>Opt-out: {{ s.opt_out | default: '—' }}</li>
+    <li>Docs: {% if s.docs %}<a href="{{ s.docs }}" rel="noopener" target="_blank">Provider policy/docs</a>{% else %}—{% endif %}</li>
+  </ul>
+</section>
+<hr>
 {% endfor %}
-</ul>
 {% else %}
 No public details available at this time. This section will be updated as implementations are finalized.
 {% endif %}

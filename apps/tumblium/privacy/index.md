@@ -82,20 +82,31 @@ lang: ja
 
 {% assign sdks = site.data.policies.tumblium.sdks %}
 {% if sdks and sdks.size > 0 %}
-<ul>
 {% for s in sdks %}
-  <li>
-    <strong>{{ s.name }}</strong>
-    {% if s.provider %}（提供者: {{ s.provider }}）{% endif %}<br>
-    用途: {{ s.purpose | default: '—' }}<br>
-    送信情報: {% if s.data_sent %}{{ s.data_sent | join: '、' }}{% else %}—{% endif %}<br>
-    送信先/エンドポイント: {{ s.endpoint | default: '—' }}<br>
-    保持期間: {{ s.retention | default: '—' }}<br>
-    オプトアウト: {{ s.opt_out | default: '—' }}<br>
-    参考: {% if s.docs %}<a href="{{ s.docs }}" rel="noopener" target="_blank">提供者のポリシー/ドキュメント</a>{% else %}—{% endif %}
-  </li>
+<section>
+  <h4 style="margin-bottom: .2rem;">
+    {{ s.name }}{% if s.provider %}（提供者: {{ s.provider }}）{% endif %}
+  </h4>
+  <ul>
+    <li>用途: {{ s.purpose | default: '—' }}</li>
+    <li>
+      送信情報:
+      {% if s.data_sent %}
+      <ul>
+      {% for item in s.data_sent %}
+        <li>{{ item }}</li>
+      {% endfor %}
+      </ul>
+      {% else %}—{% endif %}
+    </li>
+    <li>送信先/エンドポイント: {{ s.endpoint | default: '—' }}</li>
+    <li>保持期間: {{ s.retention | default: '—' }}</li>
+    <li>オプトアウト: {{ s.opt_out | default: '—' }}</li>
+    <li>参考: {% if s.docs %}<a href="{{ s.docs }}" rel="noopener" target="_blank">提供者のポリシー/ドキュメント</a>{% else %}—{% endif %}</li>
+  </ul>
+</section>
+<hr>
 {% endfor %}
-</ul>
 {% else %}
 現時点で公開可能な連携の詳細はありません。実装確定後に更新します。
 {% endif %}
