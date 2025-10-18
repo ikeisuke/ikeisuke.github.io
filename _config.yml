@@ -9,8 +9,7 @@ baseurl: ""
 theme: minima
 
 # Site-wide metadata (edit as needed)
-author:
-  name: Keisuke Isono
+author: Keisuke Isono
 
 contact:
   email: ""
