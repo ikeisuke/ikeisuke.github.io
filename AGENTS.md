@@ -30,7 +30,7 @@
    - Front Matter: `layout: default`, `title: <App> プライバシーポリシー`
    - 既存雛形（`apps/tumblium/privacy/index.md`）を参考に執筆。
 2. 一覧へ登録: `_data/apps.yml` に `id/name/links.privacy` を追加。
-3. 連絡先設定（任意）: `_config.yml` の `contact.email` を更新。
+3. お問い合わせの案内方針: 原則としてメールアドレスは記載せず、アプリ内のヘルプ／サポート導線を案内する。やむを得ずメール記載が必要なアプリのみ、個別に `_config.yml` の `contact.email` を利用可（公開前に合意を得ること）。
 4. レビュー観点: 章立て、URL、表現の明確性、アプリ固有事項の反映、法令上の表現妥当性。
 
 ## 禁止・注意事項
@@ -41,4 +41,3 @@
 ## 本PRの対象
 - 対象: Tumblium のプライバシーポリシー公開基盤整備とページ追加のみ。
 - 非対象: MimiLoop 等の移管（今後別途対応）。
-
