@@ -1,0 +1,26 @@
+title: ikeisuke.github.io
+description: Personal site hosting app policies and docs
+lang: ja
+timezone: Asia/Tokyo
+url: https://ikeisuke.github.io
+baseurl: ""
+
+# Keep dependencies minimal for GitHub Pages build
+theme: jekyll-theme-cayman
+
+# Site-wide metadata (edit as needed)
+author:
+  name: Keisuke Isono
+
+contact:
+  email: ""
+  github: ikeisuke
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

@@ -1,0 +1,36 @@
+sdks:
+  - name: Tumblr API / OAuth2
+    provider: Automattic, Inc. (Tumblr)
+    purpose: アプリ機能提供のための公式API利用（認可とデータ取得）
+    data_sent:
+      - OAuth2認可コード/トークン（PKCE利用）
+      - APIリクエストパラメータ（ユーザー操作に基づく）
+      - 一般的なHTTPヘッダ（OS/アプリバージョン等）
+    endpoint: api.tumblr.com（API）、www.tumblr.com（OAuth認可/トークン）
+    retention: Tumblrのプライバシーポリシー・規約に準拠
+    opt_out: アプリの利用停止・ログアウトで送信停止
+    docs: https://www.tumblr.com/policy/privacy
+
+  - name: SDWebImage / SDWebImageSwiftUI
+    provider: SDWebImage Contributors（オープンソース）
+    purpose: 画像の非同期読み込み・表示・キャッシュ
+    data_sent:
+      - 表示対象画像のHTTP取得（該当画像URLへのリクエスト）
+    endpoint: 画像配信元ホスト（例: media.tumblr.com 等）
+    retention: 端末内キャッシュ（OS/ライブラリのキャッシュ方針に準拠）
+    opt_out: —
+    docs: https://github.com/SDWebImage/SDWebImage
+
+# 例（必要に応じて追記してください）
+# sdks:
+#   - name: Firebase Crashlytics
+#     provider: Google LLC
+#     purpose: クラッシュ解析
+#     data_sent:
+#       - クラッシュログ
+#       - 端末情報（OSバージョン、機種等）
+#       - アプリバージョン
+#     endpoint: crashlytics.google.com（地域はプロバイダ仕様に依存）
+#     retention: プロバイダの規約に準拠
+#     opt_out: アプリ内の設定で無効化可能（例）
+#     docs: https://firebase.google.com/support/privacy
