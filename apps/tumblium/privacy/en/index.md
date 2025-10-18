@@ -42,7 +42,7 @@ We use collected information for the following purposes:
 
 ## 4. Storage and Sharing
 
-- Data stored on device is not transmitted externally unless you explicitly take an action or provide consent.
+- Data stored on the device is not transmitted externally except when you explicitly perform an action or provide consent.
 - If crash/analytics is enabled, data may be sent to the service provider (e.g., platform diagnostics or analytics services).
 - We do not sell personal information to third parties. Disclosure occurs only when legally required or to protect life and property in emergencies.
 
@@ -55,6 +55,14 @@ We use collected information for the following purposes:
 - Image cache: temporary image cache via SDWebImage
 
 All of the above remain on your device; nothing is sent to our own servers.
+
+## 5. Third Party Disclosure
+
+We do not disclose personal information to third parties except in the following cases:
+
+- When legally required by law
+- To protect life, body, or property when obtaining user consent is difficult
+- When necessary for business operations within appropriate contractual and management frameworks
 
 ## 6. Tumblr Integration (Required)
 
@@ -106,7 +114,7 @@ We apply reasonable technical and organizational measures to protect information
 
 ## 10. Age Rating
 
-The App Store age rating is 16+. Users under 16 must not use the App. If you are 16–17, please use the App with parental consent.
+The App has an App Store age rating of 16+. Users under 16 are not permitted to use the App. If you are 16–17, please use the App with parental consent.
 
 Note: Tumblr platform age requirements also apply (EU: 16+, others: 13+).
 
@@ -118,7 +126,7 @@ We may update this Policy as laws or services change. We will notify important c
 
 For privacy inquiries, please use the in‑app Help/Support channel. Using the in‑app flow ensures relevant app and device information is included, enabling faster support.
 
-## 13. Tumblr User‑Generated Content
+## 13. Tumblr User-Generated Content
 
 The App displays user‑generated content hosted on Tumblr. The content you see depends on your Tumblr account settings (e.g., Safe Mode).
 
@@ -134,3 +142,7 @@ Content moderation and filtering are managed by Tumblr. The App displays content
 - On‑device data: uninstalling the App removes all on‑device data
 - Tumblr data: posts/likes tied to your Tumblr account must be deleted on Tumblr
 - OAuth tokens: use the App’s “Log out” to delete tokens
+
+---
+
+Note: This is the privacy policy for Tumblium. It will be updated as necessary when features or external services change.
