@@ -1,5 +1,4 @@
----
-layout: default
+layout: page
 title: Home
 ---
 
@@ -19,4 +18,3 @@ title: Home
   </li>
 {% endfor %}
 </ul>
-

@@ -6,7 +6,7 @@ url: https://ikeisuke.github.io
 baseurl: ""
 
 # Keep dependencies minimal for GitHub Pages build
-theme: jekyll-theme-cayman
+theme: minima
 
 # Site-wide metadata (edit as needed)
 author:
@@ -24,3 +24,8 @@ exclude:
   - Gemfile.lock
   - node_modules
   - vendor
+
+# Minima navigation (align with MimiLoopDocs)
+header_pages:
+  - apps/tumblium/privacy/index.md
+  - apps/tumblium/privacy/en/index.md

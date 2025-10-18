@@ -1,5 +1,4 @@
----
-layout: default
+layout: page
 title: Tumblium Privacy Policy
 description: Privacy policy for the Tumblium app
 lang: en

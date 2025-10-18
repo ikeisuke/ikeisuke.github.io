@@ -1,7 +1,7 @@
----
-layout: default
+layout: page
 title: Tumblium プライバシーポリシー
 description: Tumblium アプリに関するプライバシーポリシー
+lang: ja
 ---
 
 # プライバシーポリシー（Tumblium）
