@@ -44,6 +44,10 @@
    - 原則、メールアドレスは記載せず「アプリ内のヘルプ／サポートから連絡」を案内します。
    - どうしてもメール掲載が必要な場合のみ、合意の上で `_config.yml` の `contact.email` を利用。
 
+4. 外部サービス・SDKの具体項目（任意）:
+   - `_data/policies/<app>.yml` に `sdks` 配列として管理し、ポリシーページで自動表示されます。
+   - フィールド例: `name`, `provider`, `purpose`, `data_sent[]`, `endpoint`, `retention`, `opt_out`, `docs`
+
 ## 運用メモ
 
 - GitHub Pages のユーザーサイト（`ikeisuke.github.io`）としてビルドされます。

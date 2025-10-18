@@ -1,0 +1,16 @@
+sdks: []
+
+# 例（必要に応じて追記してください）
+# sdks:
+#   - name: Firebase Crashlytics
+#     provider: Google LLC
+#     purpose: クラッシュ解析
+#     data_sent:
+#       - クラッシュログ
+#       - 端末情報（OSバージョン、機種等）
+#       - アプリバージョン
+#     endpoint: crashlytics.google.com（地域はプロバイダ仕様に依存）
+#     retention: プロバイダの規約に準拠
+#     opt_out: アプリ内の設定で無効化可能（例）
+#     docs: https://firebase.google.com/support/privacy
+

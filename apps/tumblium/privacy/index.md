@@ -55,6 +55,28 @@ description: Tumblium アプリに関するプライバシーポリシー
 
 本アプリが外部サービスと連携する場合、その範囲・目的・取得情報は当該サービスの提供条件に従います。連携の有効化はユーザーの明示的な操作・同意に基づきます。連携の詳細は、実装確定後に本ポリシーへ追記します。
 
+### 外部サービス・SDK一覧（Tumblium）
+
+{% assign sdks = site.data.policies.tumblium.sdks %}
+{% if sdks and sdks.size > 0 %}
+<ul>
+{% for s in sdks %}
+  <li>
+    <strong>{{ s.name }}</strong>
+    {% if s.provider %}（提供者: {{ s.provider }}）{% endif %}<br>
+    用途: {{ s.purpose | default: '—' }}<br>
+    送信情報: {% if s.data_sent %}{{ s.data_sent | join: '、' }}{% else %}—{% endif %}<br>
+    送信先/エンドポイント: {{ s.endpoint | default: '—' }}<br>
+    保持期間: {{ s.retention | default: '—' }}<br>
+    オプトアウト: {{ s.opt_out | default: '—' }}<br>
+    参考: {% if s.docs %}<a href="{{ s.docs }}" rel="noopener" target="_blank">提供者のポリシー/ドキュメント</a>{% else %}—{% endif %}
+  </li>
+{% endfor %}
+</ul>
+{% else %}
+現時点で公開可能な連携の詳細はありません。実装確定後に更新します。
+{% endif %}
+
 ## 7. 分析ツール・クラッシュレポート
 
 分析や不具合解析のために、プラットフォーム標準の診断機能やサードパーティーツールを利用する場合があります。利用の有無・種類・送信される情報はアプリのバージョンによって異なるため、アプリ内の設定画面やリリースノートも併せてご確認ください。
